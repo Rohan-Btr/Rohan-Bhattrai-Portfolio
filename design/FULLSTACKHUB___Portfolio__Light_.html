@@ -1,0 +1,884 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FULLSTACKHUB — Rohan Btr | Digital Brutalism Portfolio</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="37b1853c8eba5711===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'cobalt': '#3157FF',
+        'cobalt-dark': '#5475FF',
+        'light-background': '#F3F2ED',
+        'light-on-background': '#171717',
+        'light-surface': '#FFFFFF',
+        'light-on-surface': '#171717',
+        'light-primary': '#171717',
+        'light-on-primary': '#F3F2ED',
+        'light-secondary': '#575757',
+        'light-on-secondary': '#FFFFFF',
+        'light-accent': '#3157FF',
+        'light-on-accent': '#FFFFFF',
+        'light-border': '#171717',
+        'light-muted': '#777777',
+        'light-surface-alt': '#E8E6DF',
+        'light-on-surface-alt': '#171717',
+        'dark-background': '#111111',
+        'dark-on-background': '#F5F5F5',
+        'dark-surface': '#1B1B1B',
+        'dark-on-surface': '#F5F5F5',
+        'dark-primary': '#F5F5F5',
+        'dark-on-primary': '#111111',
+        'dark-secondary': '#A0A0A0',
+        'dark-on-secondary': '#111111',
+        'dark-accent': '#6B88FF',
+        'dark-on-accent': '#111111',
+        'dark-border': '#444444',
+        'dark-muted': '#A0A0A0',
+        'dark-surface-alt': '#242424',
+        'dark-on-surface-alt': '#F5F5F5',
+      },
+      borderRadius: {
+        'none': '0px',
+        'DEFAULT': '0px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '64px',
+        'page-margin': '32px',
+      },
+      fontFamily: {
+        'display': ['"Space Grotesk"', 'sans-serif'],
+        'headline': ['"Space Grotesk"', 'sans-serif'],
+        'title': ['"Space Grotesk"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"IBM Plex Mono"', 'sans-serif'],
+        'section': ['"Space Grotesk"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-xl': ['72px', { lineHeight: '74px', letterSpacing: '-2px', fontWeight: '700' }],
+        'display-xl-mobile': ['32px', { lineHeight: '36px', letterSpacing: '-1px', fontWeight: '700' }],
+        'display-lg': ['52px', { lineHeight: '56px', letterSpacing: '-1.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['30px', { lineHeight: '34px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '42px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '32px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '30px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'title-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['13px', { lineHeight: '18px', letterSpacing: '0.75px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '0.5px', fontWeight: '500' }],
+        'section-num': ['64px', { lineHeight: '64px', letterSpacing: '-2px', fontWeight: '700' }],
+        'section-num-mobile': ['32px', { lineHeight: '34px', letterSpacing: '-1px', fontWeight: '700' }],
+      },
+      transitionDuration: {
+        'state-change': '120ms',
+        'surface-enter': '220ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }
+    html { scroll-behavior: smooth; }
+    .reveal-block { opacity: 1; transform: translateY(0); transition: opacity 220ms cubic-bezier(0.2, 0, 0, 1), transform 220ms cubic-bezier(0.2, 0, 0, 1); }
+  </style>
+</head>
+<body class="bg-light-background dark:bg-dark-background text-light-on-background dark:text-dark-on-background font-body antialiased selection:bg-light-accent selection:text-light-on-accent">
+
+  <div class="min-h-screen w-full max-w-[1440px] mx-auto border-x border-light-border dark:border-dark-border flex flex-col">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-light-background dark:bg-dark-background border-b border-light-border dark:border-dark-border">
+      <div class="flex items-center justify-between px-gutter-md md:px-gutter-xl h-16 gap-gutter-md">
+        <a href="#top" class="inline-flex items-center gap-gutter-sm group">
+          <span class="w-3 h-3 bg-light-accent dark:bg-dark-accent inline-block"></span>
+          <span data-design-text-token="title-md" class="font-title text-title-md uppercase tracking-tight">FULLSTACKHUB</span>
+        </a>
+
+        <nav aria-label="Primary navigation" class="hidden lg:flex items-center gap-gutter-lg">
+          <a href="#about" class="font-label text-label-sm uppercase hover:text-light-accent dark:hover:text-dark-accent border-b-2 border-transparent hover:border-light-accent dark:hover:border-dark-accent py-1 transition-colors duration-state-change">About</a>
+          <a href="#journey" class="font-label text-label-sm uppercase hover:text-light-accent dark:hover:text-dark-accent border-b-2 border-transparent hover:border-light-accent dark:hover:border-dark-accent py-1 transition-colors duration-state-change">Journey</a>
+          <a href="#skills" class="font-label text-label-sm uppercase hover:text-light-accent dark:hover:text-dark-accent border-b-2 border-transparent hover:border-light-accent dark:hover:border-dark-accent py-1 transition-colors duration-state-change">Skills</a>
+          <a href="#work" class="font-label text-label-sm uppercase hover:text-light-accent dark:hover:text-dark-accent border-b-2 border-transparent hover:border-light-accent dark:hover:border-dark-accent py-1 transition-colors duration-state-change">Work</a>
+          <a href="#research" class="font-label text-label-sm uppercase hover:text-light-accent dark:hover:text-dark-accent border-b-2 border-transparent hover:border-light-accent dark:hover:border-dark-accent py-1 transition-colors duration-state-change">Research</a>
+          <a href="#certificates" class="font-label text-label-sm uppercase hover:text-light-accent dark:hover:text-dark-accent border-b-2 border-transparent hover:border-light-accent dark:hover:border-dark-accent py-1 transition-colors duration-state-change">Certificates</a>
+          <a href="#contact" class="font-label text-label-sm uppercase hover:text-light-accent dark:hover:text-dark-accent border-b-2 border-transparent hover:border-light-accent dark:hover:border-dark-accent py-1 transition-colors duration-state-change">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-gutter-sm">
+          <button id="theme-toggle" type="button" data-component-id="button-theme-toggle" data-component-type="button" data-component-variant="secondary" aria-label="Toggle light or dark theme" class="inline-flex items-center gap-gutter-xs px-gutter-md py-gutter-sm bg-light-surface dark:bg-dark-surface text-light-on-surface dark:text-dark-on-surface border border-light-border dark:border-dark-border rounded-none font-label text-label-sm uppercase transition-colors duration-state-change hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent hover:border-light-accent dark:hover:border-dark-accent">
+            <span class="material-symbols-outlined text-body-md" aria-hidden="true">contrast</span>
+            <span id="theme-label" data-design-text-token="label-sm">Dark Mode</span>
+          </button>
+
+          <button id="mobile-menu-open" type="button" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" aria-label="Open navigation menu" class="lg:hidden inline-flex items-center justify-center w-10 h-10 bg-light-surface dark:bg-dark-surface text-light-on-surface dark:text-dark-on-surface border border-light-border dark:border-dark-border rounded-none hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent">
+            <span class="material-symbols-outlined text-title-md">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top" class="flex-1">
+
+      <!-- HERO SECTION -->
+      <section class="border-b border-light-border dark:border-dark-border">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+
+          <!-- Left Asymmetric Editorial Column -->
+          <div class="lg:col-span-7 p-gutter-md md:p-gutter-xl lg:border-r border-light-border dark:border-dark-border flex flex-col justify-between gap-gutter-xl">
+            <div class="flex flex-col gap-gutter-lg">
+              <div class="flex flex-wrap items-center justify-between gap-gutter-sm border-b border-light-border dark:border-dark-border pb-gutter-md">
+                <span data-design-text-token="label-lg" class="font-label text-label-lg text-light-accent dark:text-dark-accent uppercase">
+                  CSE STUDENT / DEVELOPER / BUILDER
+                </span>
+                <span data-design-text-token="label-sm" class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase tabular-nums">
+                  SYS.00 // PORTFOLIO 2026
+                </span>
+              </div>
+
+              <h1 data-design-text-token="display-xl" class="font-display text-display-xl-mobile md:text-display-xl uppercase text-balance">
+                SOFTWARE ENGINEER &amp; CREATIVE DEVELOPER.
+              </h1>
+
+              <p data-design-text-token="body-lg" class="font-body text-body-lg text-light-secondary dark:text-dark-secondary max-w-prose text-pretty">
+                Building digital experiences where code, design and ideas meet.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-gutter-lg">
+              <div class="flex flex-wrap items-center gap-gutter-md">
+                <a href="#work" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-gutter-md bg-light-primary dark:bg-dark-primary text-light-on-primary dark:text-dark-on-primary border border-light-border dark:border-dark-border rounded-none font-label text-label-lg uppercase transition-colors duration-state-change hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent hover:border-light-accent dark:hover:border-dark-accent">
+                  <span data-design-text-token="label-lg">Explore My Work</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">south_east</span>
+                </a>
+
+                <a href="#contact" data-component-id="button-secondary" data-component-type="button" data-component-variant="secondary" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-gutter-md bg-light-surface dark:bg-dark-surface text-light-on-surface dark:text-dark-on-surface border border-light-border dark:border-dark-border rounded-none font-label text-label-lg uppercase transition-colors duration-state-change hover:bg-light-primary dark:hover:bg-dark-primary hover:text-light-on-primary dark:hover:text-dark-on-primary">
+                  <span data-design-text-token="label-lg">Let&#39;s Connect</span>
+                </a>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 border-t border-light-border dark:border-dark-border pt-gutter-md gap-gutter-md">
+                <div>
+                  <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block">Alias</span>
+                  <span class="font-label text-label-lg uppercase text-balance">Rohan Btr</span>
+                </div>
+                <div>
+                  <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block">Legal / Cert</span>
+                  <span class="font-label text-label-lg uppercase text-balance">Zaw Moe Hein</span>
+                </div>
+                <div>
+                  <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block">Code</span>
+                  <a href="https://github.com/Rohan-Btr" target="_blank" rel="noopener noreferrer" class="font-label text-label-lg uppercase underline underline-offset-4 hover:text-light-accent dark:hover:text-dark-accent">GitHub</a>
+                </div>
+                <div>
+                  <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block">Network</span>
+                  <a href="https://www.linkedin.com/in/rohan-btr-550972268/" target="_blank" rel="noopener noreferrer" class="font-label text-label-lg uppercase underline underline-offset-4 hover:text-light-accent dark:hover:text-dark-accent">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Portrait Column -->
+          <div class="lg:col-span-5 bg-light-surface dark:bg-dark-surface flex flex-col justify-between">
+            <div class="px-gutter-md md:px-gutter-lg py-gutter-sm border-b border-light-border dark:border-dark-border flex items-center justify-between">
+              <span class="font-label text-label-sm uppercase">FIG.00 // ROHAN BHATTRAI</span>
+              <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase">VERIFIED PORTRAIT</span>
+            </div>
+
+            <div class="p-gutter-md md:p-gutter-lg flex-1 flex items-center justify-center bg-light-surface-alt dark:bg-dark-surface-alt">
+              <div class="w-full max-w-md border-2 border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface relative overflow-hidden group">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrAuriUk2m4CMMNPS_P4m6N2KxOBzXKamvW7575btiHhG4ePauYjpeE1hxEB1H9GuLMPVEKmih_HP9D5Wvkv41DYYUtuYXL_NN9jkMbaHCpG5l4iHuTPhy96ljjYXIMFEc1Xqyd3QYby0znfQt8jJAysm4v7nWUtuSpqiKn6fkShshI_AlJ7HfLdePA3oxje_Hn5tiOXJzoAd-y91nUre--7XlH6sR1KLzx47BxLkFrAAYmPbmkz2yHSUg" alt="Rohan Bhattrai (Rohan Btr) professional portrait" class="w-full aspect-[4/5] object-cover object-top transition-transform duration-surface-enter group-hover:scale-[1.02]" data-stitch-original-src="bb7a978180eb22f6===../../uploads/my_profile-e41c89.png">
+                <div class="border-t border-light-border dark:border-dark-border px-gutter-md py-gutter-sm bg-light-surface dark:bg-dark-surface flex items-center justify-between">
+                  <span class="font-label text-label-sm uppercase">PARUL UNIVERSITY // B.TECH CSE</span>
+                  <span class="w-2.5 h-2.5 bg-light-accent dark:bg-dark-accent inline-block"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="px-gutter-md md:px-gutter-lg py-gutter-md border-t border-light-border dark:border-dark-border bg-light-primary dark:bg-dark-primary text-light-on-primary dark:text-dark-on-primary">
+              <p class="font-label text-label-lg uppercase tracking-wide text-center">
+                &#34;BUILDING IDEAS. ENGINEERING EXPERIENCES.&#34;
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 01: ABOUT -->
+      <section id="about" class="border-b border-light-border dark:border-dark-border reveal-block">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          <div class="lg:col-span-4 p-gutter-md md:p-gutter-xl lg:border-r border-light-border dark:border-dark-border flex flex-col justify-between gap-gutter-lg bg-light-surface-alt dark:bg-dark-surface-alt">
+            <div>
+              <span data-design-text-token="section-num" class="font-section text-section-num-mobile md:text-section-num text-light-accent dark:text-dark-accent block tabular-nums">01</span>
+              <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block mt-gutter-xs">IDENTITY &amp; FOCUS</span>
+            </div>
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg uppercase text-balance">
+              THE PERSON BEHIND THE CODE.
+            </h2>
+          </div>
+
+          <div class="lg:col-span-8 p-gutter-md md:p-gutter-xl flex flex-col gap-gutter-xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg">
+              <div class="border border-light-border dark:border-dark-border p-gutter-lg bg-light-surface dark:bg-dark-surface">
+                <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">ACADEMIC BASE // 2023 — MAY 2027</span>
+                <h3 class="font-title text-title-md uppercase mb-gutter-sm text-balance">B.Tech Computer Science &amp; Engineering</h3>
+                <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary text-pretty">
+                  Studying at Parul University, Vadodara, Gujarat, India (2023 — Expected Graduation: May 2027). Building a solid foundation across computer networks, internet protocols, IoT systems, and modern web engineering.
+                </p>
+              </div>
+
+              <div class="border border-light-border dark:border-dark-border p-gutter-lg bg-light-surface dark:bg-dark-surface">
+                <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">ENGINEERING DIRECTION</span>
+                <h3 class="font-title text-title-md uppercase mb-gutter-sm text-balance">Full-Stack, Blockchain &amp; Applied AI</h3>
+                <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary text-pretty">
+                  Focused on MERN-stack architecture, decentralized systems (on-chain analysis and TEE coprocessors), and integrating diffusion-based AI models into practical web applications.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 border border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface">
+              <div class="p-gutter-md sm:border-r border-b sm:border-b-0 border-light-border dark:border-dark-border">
+                <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block">Brand</span>
+                <span class="font-title text-title-md uppercase text-balance">FULLSTACKHUB</span>
+              </div>
+              <div class="p-gutter-md sm:border-r border-b sm:border-b-0 border-light-border dark:border-dark-border">
+                <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block">Professional Name</span>
+                <span class="font-title text-title-md uppercase text-balance">Rohan Bhattrai</span>
+              </div>
+              <div class="p-gutter-md">
+                <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block">Academic / Cert Name</span>
+                <span class="font-title text-title-md uppercase text-balance">Zaw Moe Hein</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 02: JOURNEY -->
+      <section id="journey" class="border-b border-light-border dark:border-dark-border reveal-block">
+        <div class="p-gutter-md md:p-gutter-xl border-b border-light-border dark:border-dark-border flex flex-wrap items-center justify-between gap-gutter-md">
+          <div class="flex items-baseline gap-gutter-md">
+            <span data-design-text-token="section-num" class="font-section text-section-num-mobile md:text-section-num text-light-accent dark:text-dark-accent tabular-nums">02</span>
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg uppercase">ACADEMIC &amp; TECHNICAL JOURNEY.</h2>
+          </div>
+          <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase">2023 — MAY 2027 // VERIFIED MILESTONES</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Milestone 1 -->
+          <div class="p-gutter-md md:p-gutter-lg border-b lg:border-b-0 md:border-r border-light-border dark:border-dark-border flex flex-col gap-gutter-md">
+            <div class="flex items-center justify-between">
+              <span class="font-display text-display-lg-mobile md:text-display-lg tabular-nums">2023</span>
+              <span class="w-4 h-4 bg-light-accent dark:bg-dark-accent inline-block"></span>
+            </div>
+            <div class="border-t border-light-border dark:border-dark-border pt-gutter-md flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase">2023 — MAY 2027 // PARUL UNIVERSITY</span>
+              <h3 class="font-title text-title-md uppercase text-balance">B.Tech Computer Science &amp; Engineering</h3>
+              <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary">
+                Started B.Tech CSE at Parul University, Vadodara, Gujarat. Expected graduation: May 2027.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="p-gutter-md md:p-gutter-lg border-b lg:border-b-0 lg:border-r border-light-border dark:border-dark-border flex flex-col gap-gutter-md">
+            <div class="flex items-center justify-between">
+              <span class="font-display text-display-lg-mobile md:text-display-lg tabular-nums">2025</span>
+              <span class="w-4 h-4 border-2 border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface inline-block"></span>
+            </div>
+            <div class="border-t border-light-border dark:border-dark-border pt-gutter-md flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase">JAN — APR 2025 // NPTEL</span>
+              <h3 class="font-title text-title-md uppercase text-balance">Computer Networks &amp; Internet Protocol</h3>
+              <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary">
+                Completed 12-week NPTEL coursework with a verified score of 61%, strengthening core networking and protocol foundations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="p-gutter-md md:p-gutter-lg border-b md:border-b-0 md:border-r border-light-border dark:border-dark-border flex flex-col gap-gutter-md">
+            <div class="flex items-center justify-between">
+              <span class="font-display text-display-lg-mobile md:text-display-lg tabular-nums">2026</span>
+              <span class="w-4 h-4 bg-light-accent dark:bg-dark-accent inline-block"></span>
+            </div>
+            <div class="border-t border-light-border dark:border-dark-border pt-gutter-md flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase">SEP 2026 // IJRTI PUBLICATION</span>
+              <h3 class="font-title text-title-md uppercase text-balance">IDM-VTON MERN Research</h3>
+              <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary">
+                Co-authored and published in IJRTI Vol. 11, Issue 9 under Prof. Ankita Verma at Parul Institute of Engineering &amp; Technology.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="p-gutter-md md:p-gutter-lg flex flex-col gap-gutter-md">
+            <div class="flex items-center justify-between">
+              <span class="font-display text-display-lg-mobile md:text-display-lg tabular-nums">2026</span>
+              <span class="w-4 h-4 border-2 border-light-border dark:border-dark-border bg-light-primary dark:bg-dark-primary inline-block"></span>
+            </div>
+            <div class="border-t border-light-border dark:border-dark-border pt-gutter-md flex flex-col gap-gutter-sm">
+              <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase">OCT — NOV 2026 // SYSTEMS &amp; WEB3</span>
+              <h3 class="font-title text-title-md uppercase text-balance">IoT (84%) &amp; Web3 Track</h3>
+              <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary">
+                Completed NPTEL Introduction to IoT (84%), Tutedude Blockchain, and Binance Academy tracks on On-Chain Analysis and TEE Coprocessors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 03: SKILLS -->
+      <section id="skills" class="border-b border-light-border dark:border-dark-border reveal-block">
+        <div class="p-gutter-md md:p-gutter-xl border-b border-light-border dark:border-dark-border flex flex-wrap items-center justify-between gap-gutter-md bg-light-surface dark:bg-dark-surface">
+          <div class="flex items-baseline gap-gutter-md">
+            <span data-design-text-token="section-num" class="font-section text-section-num-mobile md:text-section-num text-light-accent dark:text-dark-accent tabular-nums">03</span>
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg uppercase">TOOLS. TECHNOLOGIES. THINKING.</h2>
+          </div>
+          <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase">TECHNICAL MATRIX</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="p-gutter-lg border-b md:border-r border-light-border dark:border-dark-border">
+            <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">01 / FRONTEND</span>
+            <h3 class="font-title text-title-md uppercase mb-gutter-md">Interface &amp; Client</h3>
+            <p class="font-label text-label-lg uppercase text-balance">HTML / CSS / JavaScript / React</p>
+          </div>
+
+          <div class="p-gutter-lg border-b lg:border-r border-light-border dark:border-dark-border">
+            <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">02 / BACKEND</span>
+            <h3 class="font-title text-title-md uppercase mb-gutter-md">Server &amp; APIs</h3>
+            <p class="font-label text-label-lg uppercase text-balance">Node.js / Express.js</p>
+          </div>
+
+          <div class="p-gutter-lg border-b md:border-r lg:border-r-0 border-light-border dark:border-dark-border">
+            <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">03 / DATABASE</span>
+            <h3 class="font-title text-title-md uppercase mb-gutter-md">Data Persistence</h3>
+            <p class="font-label text-label-lg uppercase text-balance">MongoDB</p>
+          </div>
+
+          <div class="p-gutter-lg border-b lg:border-b-0 lg:border-r border-light-border dark:border-dark-border">
+            <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">04 / FOUNDATIONS</span>
+            <h3 class="font-title text-title-md uppercase mb-gutter-md">Systems &amp; Protocols</h3>
+            <p class="font-label text-label-lg uppercase text-balance">Computer Networks / Internet Protocol / IoT</p>
+          </div>
+
+          <div class="p-gutter-lg border-b md:border-b-0 md:border-r border-light-border dark:border-dark-border">
+            <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">05 / BLOCKCHAIN</span>
+            <h3 class="font-title text-title-md uppercase mb-gutter-md">Decentralized Compute</h3>
+            <p class="font-label text-label-lg uppercase text-balance">Blockchain Fundamentals / On-chain Analysis / TEE Coprocessors</p>
+          </div>
+
+          <div class="p-gutter-lg">
+            <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-sm">06 / EMERGING TECHNOLOGY</span>
+            <h3 class="font-title text-title-md uppercase mb-gutter-md">Applied Intelligence</h3>
+            <p class="font-label text-label-lg uppercase text-balance">Diffusion Models / IDM-VTON / AI Integration</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 04: WORK / PROJECTS -->
+      <section id="work" class="border-b border-light-border dark:border-dark-border reveal-block">
+        <div class="p-gutter-md md:p-gutter-xl border-b border-light-border dark:border-dark-border flex flex-wrap items-center justify-between gap-gutter-md">
+          <div class="flex items-baseline gap-gutter-md">
+            <span data-design-text-token="section-num" class="font-section text-section-num-mobile md:text-section-num text-light-accent dark:text-dark-accent tabular-nums">04</span>
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg uppercase">VERIFIED WORK &amp; SYSTEMS.</h2>
+          </div>
+          <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase">AUTHENTIC ENGINEERING ARCHIVE</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          <!-- Verified System Architecture Entry -->
+          <article data-component-id="card-featured" data-component-type="card" data-component-variant="action" class="lg:col-span-8 p-gutter-md md:p-gutter-xl border-b lg:border-b-0 lg:border-r border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface flex flex-col justify-between gap-gutter-lg">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-lg items-start">
+              <div class="md:col-span-7 flex flex-col gap-gutter-md">
+                <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase">PRJ.01 // PROPOSED ARCHITECTURE</span>
+                <h3 class="font-headline text-headline-md uppercase">
+                  IDM-VTON E-Commerce Virtual Try-On Architecture
+                </h3>
+                <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary text-pretty">
+                  A MERN-stack e-commerce system architecture designed to integrate a pretrained IDM-VTON diffusion model via a Python/PyTorch inference service—bridging storefront requests, garment preprocessing, and virtual try-on generation.
+                </p>
+                <div class="flex flex-wrap gap-gutter-xs pt-gutter-xs">
+                  <span class="px-gutter-sm py-gutter-xs border border-light-border dark:border-dark-border font-label text-label-sm uppercase">React</span>
+                  <span class="px-gutter-sm py-gutter-xs border border-light-border dark:border-dark-border font-label text-label-sm uppercase">Node.js</span>
+                  <span class="px-gutter-sm py-gutter-xs border border-light-border dark:border-dark-border font-label text-label-sm uppercase">Express</span>
+                  <span class="px-gutter-sm py-gutter-xs border border-light-border dark:border-dark-border font-label text-label-sm uppercase">MongoDB</span>
+                  <span class="px-gutter-sm py-gutter-xs border border-light-border dark:border-dark-border font-label text-label-sm uppercase">PyTorch</span>
+                  <span class="px-gutter-sm py-gutter-xs border border-light-border dark:border-dark-border font-label text-label-sm uppercase">IDM-VTON</span>
+                </div>
+              </div>
+
+              <div class="md:col-span-5 border border-light-border dark:border-dark-border bg-light-surface-alt dark:bg-dark-surface-alt p-gutter-sm">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrBpaAr6yacPSzqBxPbSxaEMNQm8EMPFmnEoJbiCG2uEst8pTx7ky2eGbWGdj2ChZzSOcBYtOFHL7IToBjK6LpsgMJCLWo43Gbvold8j3mjPRsChe4gigGIGm0p2OmJ6niLSZnFbw7WdaNrOAqjSSwj2p9HlK6lgMLR0C9A5R4GI85lKnDTK33akYy2ETP3ZIYUBXVsBt_eHRblMKwEUkjSoyZ6OeP_RCVdiKHmzrX218B87sa8" alt="Published paper cover for IDM-VTON MERN-Stack Architecture" class="w-full h-56 object-cover object-top border border-light-border dark:border-dark-border" data-stitch-original-src="9a6c7e26046b4e00===../../images/paper_page-1.png">
+                <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block mt-gutter-xs">DOCUMENTED IN IJRTI VOL.11</span>
+              </div>
+            </div>
+
+            <footer class="border-t border-light-border dark:border-dark-border pt-gutter-md flex flex-wrap items-center justify-between gap-gutter-md">
+              <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase">STATUS: PROPOSED SYSTEM ARCHITECTURE</span>
+              <div class="flex flex-wrap gap-gutter-sm">
+                <a href="#research" class="px-gutter-md py-gutter-sm border border-light-border dark:border-dark-border font-label text-label-lg uppercase hover:bg-light-primary dark:hover:bg-dark-primary hover:text-light-on-primary dark:hover:text-dark-on-primary transition-colors duration-state-change">Read Spec</a>
+                <a href="../../uploads/research_paper-a978f2.pdf" target="_blank" rel="noopener noreferrer" class="px-gutter-md py-gutter-sm bg-light-accent dark:bg-dark-accent text-light-on-accent dark:text-dark-on-accent border border-light-accent dark:border-dark-accent font-label text-label-lg uppercase">Original PDF</a>
+              </div>
+            </footer>
+          </article>
+
+          <!-- GitHub Repository Index -->
+          <div class="lg:col-span-4 p-gutter-md md:p-gutter-xl bg-light-surface-alt dark:bg-dark-surface-alt flex flex-col justify-between gap-gutter-lg">
+            <div class="flex flex-col gap-gutter-md">
+              <span class="font-label text-label-sm text-light-primary dark:text-dark-accent uppercase">SOURCE CODE // GITHUB</span>
+              <h3 class="font-headline text-headline-md uppercase">ROHAN-BTR REPOSITORIES</h3>
+              <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary text-pretty">
+                All active codebases, coursework implementations, and full-stack experiments are maintained directly on GitHub—no fabricated demos or synthetic screenshots.
+              </p>
+            </div>
+            <a href="https://github.com/Rohan-Btr" target="_blank" rel="noopener noreferrer" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" class="inline-flex items-center justify-between gap-gutter-sm px-gutter-lg py-gutter-md bg-light-primary dark:bg-dark-primary text-light-on-primary dark:text-dark-on-primary border border-light-border dark:border-dark-border rounded-none font-label text-label-lg uppercase hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent hover:border-light-accent dark:hover:border-dark-accent transition-colors duration-state-change">
+              <span data-design-text-token="label-lg">Visit GitHub.com/Rohan-Btr</span>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 05: RESEARCH -->
+      <section id="research" class="border-b border-light-border dark:border-dark-border reveal-block">
+        <div class="p-gutter-md md:p-gutter-xl border-b border-light-border dark:border-dark-border flex flex-wrap items-center justify-between gap-gutter-md bg-light-surface dark:bg-dark-surface">
+          <div class="flex items-baseline gap-gutter-md">
+            <span data-design-text-token="section-num" class="font-section text-section-num-mobile md:text-section-num text-light-accent dark:text-dark-accent tabular-nums">05</span>
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg uppercase">TECHNICAL RESEARCH PUBLICATION.</h2>
+          </div>
+          <span class="font-label text-label-sm uppercase border border-light-border dark:border-dark-border px-gutter-sm py-gutter-xs">IJRTI // VOL. 11, ISSUE 9 // SEP 2026</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          <!-- Left Spec & Methodology -->
+          <div class="lg:col-span-7 p-gutter-md md:p-gutter-xl lg:border-r border-light-border dark:border-dark-border flex flex-col gap-gutter-lg">
+            <div>
+              <span class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase block mb-gutter-xs">PAPER ID: IJRTI26093 // ISSN: 2456-3315</span>
+              <h3 class="font-headline text-headline-md uppercase text-balance">
+                Integrating Diffusion-Based Virtual Try-On into an E-Commerce Platform: A MERN-Stack Architecture Using IDM-VTON.
+              </h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 border border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface">
+              <div class="p-gutter-md border-b sm:border-b-0 sm:border-r border-light-border dark:border-dark-border">
+                <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block mb-gutter-xs">Co-Authors</span>
+                <p class="font-body text-body-md">Kishan Kushwaha, Krishna Thakur, Zaw Moe Hein, Hariom Paswan</p>
+              </div>
+              <div class="p-gutter-md">
+                <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase block mb-gutter-xs">Research Guide</span>
+                <p class="font-body text-body-md">Prof. Ankita Verma (Parul Institute of Engineering &amp; Technology)</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-gutter-md">
+              <div>
+                <h4 class="font-label text-label-lg uppercase text-light-accent dark:text-dark-accent mb-gutter-xs">01 // Overview &amp; Proposed Architecture</h4>
+                <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary text-pretty">
+                  Addresses apparel e-commerce return rates caused by fit and appearance uncertainty. The paper traces the shift from GAN-based warping networks (VITON) to diffusion-based approaches and presents a <strong class="text-light-on-background dark:text-dark-on-background font-semibold">proposed MERN-stack system architecture</strong> (not a fully validated production deployment) integrating a pretrained IDM-VTON model.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-label text-label-lg uppercase text-light-accent dark:text-dark-accent mb-gutter-xs">02 // Methodology &amp; Stack</h4>
+                <p class="font-body text-body-md text-light-secondary dark:text-dark-secondary text-pretty">
+                  React storefront handles customer and garment image selection; Node.js and Express.js manage API orchestration and MongoDB persistence; Python and PyTorch execute IDM-VTON diffusion inference to synthesize garment-on-person previews.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-gutter-md pt-gutter-sm">
+              <button type="button" data-open-viewer data-doc-title="IJRTI Research Paper — IDM-VTON MERN Architecture" data-doc-meta="IJRTI VOL. 11, ISSUE 9 // SEPTEMBER 2026" data-doc-img="../../images/paper_page-1.png" data-doc-pdf="../../uploads/research_paper-a978f2.pdf" class="inline-flex items-center gap-gutter-sm px-gutter-lg py-gutter-md bg-light-primary dark:bg-dark-primary text-light-on-primary dark:text-dark-on-primary border border-light-border dark:border-dark-border font-label text-label-lg uppercase hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent hover:border-light-accent dark:hover:border-dark-accent transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">fullscreen</span>
+                <span>Inspect Paper Preview</span>
+              </button>
+
+              <a href="../../uploads/research_paper-a978f2.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-gutter-sm px-gutter-lg py-gutter-md bg-light-surface dark:bg-dark-surface text-light-on-surface dark:text-dark-on-surface border border-light-border dark:border-dark-border font-label text-label-lg uppercase hover:border-light-accent dark:hover:border-dark-accent">
+                <span>Open Original PDF</span>
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_outward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Original Document Previews -->
+          <div class="lg:col-span-5 p-gutter-md md:p-gutter-xl bg-light-surface-alt dark:bg-dark-surface-alt flex flex-col gap-gutter-md">
+            <span class="font-label text-label-sm uppercase">ORIGINAL DOCUMENT PREVIEWS (PAGES 01–02)</span>
+            <div class="grid grid-cols-2 gap-gutter-md">
+              <button type="button" data-open-viewer data-doc-title="IJRTI Research Paper — Page 01" data-doc-meta="IJRTI VOL. 11, ISSUE 9 // SEPTEMBER 2026" data-doc-img="../../images/paper_page-1.png" data-doc-pdf="../../uploads/research_paper-a978f2.pdf" class="border border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface p-gutter-xs text-left hover:border-light-accent dark:hover:border-dark-accent transition-colors duration-state-change">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrBpaAr6yacPSzqBxPbSxaEMNQm8EMPFmnEoJbiCG2uEst8pTx7ky2eGbWGdj2ChZzSOcBYtOFHL7IToBjK6LpsgMJCLWo43Gbvold8j3mjPRsChe4gigGIGm0p2OmJ6niLSZnFbw7WdaNrOAqjSSwj2p9HlK6lgMLR0C9A5R4GI85lKnDTK33akYy2ETP3ZIYUBXVsBt_eHRblMKwEUkjSoyZ6OeP_RCVdiKHmzrX218B87sa8" alt="Research paper page 1 cover" class="w-full h-64 object-cover object-top" data-stitch-original-src="9a6c7e26046b4e00===../../images/paper_page-1.png">
+                <span class="font-label text-label-sm uppercase block mt-gutter-xs">PAGE 01 // COVER</span>
+              </button>
+
+              <button type="button" data-open-viewer data-doc-title="IJRTI Research Paper — Page 02" data-doc-meta="IJRTI VOL. 11, ISSUE 9 // SEPTEMBER 2026" data-doc-img="../../images/paper_page-2.png" data-doc-pdf="../../uploads/research_paper-a978f2.pdf" class="border border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface p-gutter-xs text-left hover:border-light-accent dark:hover:border-dark-accent transition-colors duration-state-change">
+                <img src="https://lh3.googleusercontent.com/aida/ALJJyrDlnilpYaTDkOOEGkE3LTJEQr1U7fkQs8Nk-QIvl-iQbfGepz3_FOAD8Jo-cwcBH8gZ4zx3wbFW5OE26YAbBveOs-4zyCyDt6R1PTxshO8A1R4JOvvm1nCXzRrHMVG9JppbqfA36Dr6hOjuCqCHoFH6WjeabVdsCfT28D2PEoMRLxcb2KftQUoXGIxwqufM8b9YgWXVwbaNbfHAHIWL6U1NC9mPmdY27B428n-MGS5ej0I2A27E" alt="Research paper page 2 preview" class="w-full h-64 object-cover object-top" data-stitch-original-src="d7b95ba9530945d6===../../images/paper_page-2.png">
+                <span class="font-label text-label-sm uppercase block mt-gutter-xs">PAGE 02 // SPEC</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 06: CERTIFICATE ARCHIVE -->
+      <section id="certificates" class="border-b border-light-border dark:border-dark-border reveal-block">
+        <div class="p-gutter-md md:p-gutter-xl border-b border-light-border dark:border-dark-border flex flex-col gap-gutter-lg bg-light-surface dark:bg-dark-surface">
+          <div class="flex flex-wrap items-center justify-between gap-gutter-md">
+            <div class="flex items-baseline gap-gutter-md">
+              <span data-design-text-token="section-num" class="font-section text-section-num-mobile md:text-section-num text-light-accent dark:text-dark-accent tabular-nums">06</span>
+              <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg uppercase">DIGITAL CREDENTIAL ARCHIVE.</h2>
+            </div>
+            <span id="cert-count-label" class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase tabular-nums">06 VERIFIED ORIGINAL DOCUMENTS // ZAW MOE HEIN</span>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div data-component-id="tabs-horizontal" data-component-type="tabs" data-component-variant="horizontal">
+            <div id="cert-tablist" role="tablist" aria-label="Certificate archive categories" class="flex flex-wrap gap-gutter-xs">
+              <button role="tab" type="button" data-filter="all" aria-selected="true" class="cert-filter-btn px-gutter-md py-gutter-sm bg-light-accent dark:bg-dark-accent text-light-on-accent dark:text-dark-on-accent border border-light-accent dark:border-dark-accent rounded-none font-label text-label-lg uppercase transition-colors duration-state-change">
+                <span data-design-text-token="label-lg">All (06)</span>
+              </button>
+              <button role="tab" type="button" data-filter="systems" aria-selected="false" class="cert-filter-btn px-gutter-md py-gutter-sm bg-light-background dark:bg-dark-background text-light-on-background dark:text-dark-on-background border border-light-border dark:border-dark-border rounded-none font-label text-label-lg uppercase transition-colors duration-state-change hover:bg-light-primary dark:hover:bg-dark-primary hover:text-light-on-primary dark:hover:text-dark-on-primary">
+                <span data-design-text-token="label-lg">Systems &amp; IoT (02)</span>
+              </button>
+              <button role="tab" type="button" data-filter="blockchain" aria-selected="false" class="cert-filter-btn px-gutter-md py-gutter-sm bg-light-background dark:bg-dark-background text-light-on-background dark:text-dark-on-background border border-light-border dark:border-dark-border rounded-none font-label text-label-lg uppercase transition-colors duration-state-change hover:bg-light-primary dark:hover:bg-dark-primary hover:text-light-on-primary dark:hover:text-dark-on-primary">
+                <span data-design-text-token="label-lg">Blockchain (03)</span>
+              </button>
+              <button role="tab" type="button" data-filter="research" aria-selected="false" class="cert-filter-btn px-gutter-md py-gutter-sm bg-light-background dark:bg-dark-background text-light-on-background dark:text-dark-on-background border border-light-border dark:border-dark-border rounded-none font-label text-label-lg uppercase transition-colors duration-state-change hover:bg-light-primary dark:hover:bg-dark-primary hover:text-light-on-primary dark:hover:text-dark-on-primary">
+                <span data-design-text-token="label-lg">Research (01)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Original Certificate Cards Grid -->
+        <div id="cert-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-light-border dark:bg-dark-border"></div>
+      </section>
+
+      <!-- SECTION 07: CONTACT -->
+      <section id="contact" class="reveal-block">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          <div class="lg:col-span-7 p-gutter-md md:p-gutter-xl lg:border-r border-light-border dark:border-dark-border flex flex-col justify-between gap-gutter-xl">
+            <div>
+              <span data-design-text-token="section-num" class="font-section text-section-num-mobile md:text-section-num text-light-accent dark:text-dark-accent block tabular-nums">07</span>
+              <h2 data-design-text-token="display-lg" class="font-display text-display-lg-mobile md:text-display-lg uppercase mt-gutter-sm text-balance">
+                LET&#39;S BUILD SOMETHING USEFUL.
+              </h2>
+            </div>
+            <p class="font-body text-body-lg text-light-secondary dark:text-dark-secondary max-w-prose">
+              Open to software engineering collaborations, full-stack builds, and applied AI or blockchain research discussions.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 flex flex-col">
+            <a href="mailto:zapcrash7@gmail.com" class="p-gutter-lg border-b border-light-border dark:border-dark-border flex items-center justify-between hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent transition-colors duration-state-change group">
+              <div>
+                <span class="font-label text-label-sm uppercase opacity-75 block">EMAIL</span>
+                <span class="font-title text-title-md">zapcrash7@gmail.com</span>
+              </div>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_outward</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/rohan-btr-550972268/" target="_blank" rel="noopener noreferrer" class="p-gutter-lg border-b border-light-border dark:border-dark-border flex items-center justify-between hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent transition-colors duration-state-change group">
+              <div>
+                <span class="font-label text-label-sm uppercase opacity-75 block">LINKEDIN</span>
+                <span class="font-title text-title-md uppercase text-balance">Rohan Btr</span>
+              </div>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_outward</span>
+            </a>
+
+            <a href="https://github.com/Rohan-Btr" target="_blank" rel="noopener noreferrer" class="p-gutter-lg flex items-center justify-between hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent transition-colors duration-state-change group flex-1">
+              <div>
+                <span class="font-label text-label-sm uppercase opacity-75 block">GITHUB</span>
+                <span class="font-title text-title-md uppercase text-balance">github.com/Rohan-Btr</span>
+              </div>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_outward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-light-border dark:border-dark-border px-gutter-md md:px-gutter-xl py-gutter-lg flex flex-wrap items-center justify-between gap-gutter-md bg-light-surface dark:bg-dark-surface">
+      <span class="font-label text-label-sm uppercase">FULLSTACKHUB // ROHAN BTR (ROHAN BHATTRAI)</span>
+      <span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase">&#34;BUILDING IDEAS. ENGINEERING EXPERIENCES.&#34;</span>
+    </footer>
+
+  </div>
+
+  <!-- FULL-SCREEN DOCUMENT / PDF VIEWER MODAL -->
+  <dialog id="doc-viewer-modal" data-component-id="modal-standard" data-component-type="modal" data-component-variant="standard" aria-labelledby="modal-doc-title" aria-describedby="modal-doc-meta" class="w-[95vw] max-w-5xl bg-light-surface dark:bg-dark-surface text-light-on-surface dark:text-dark-on-surface border-2 border-light-border dark:border-dark-border rounded-none p-0 backdrop:bg-light-primary/85">
+    <header class="p-gutter-md md:p-gutter-lg border-b border-light-border dark:border-dark-border flex items-center justify-between gap-gutter-md">
+      <div>
+        <h2 id="modal-doc-title" data-design-text-token="title-md" class="font-title text-title-md uppercase text-balance">Document Viewer</h2>
+        <p id="modal-doc-meta" data-design-text-token="label-sm" class="font-label text-label-sm text-light-accent dark:text-dark-accent uppercase mt-gutter-xs">ARCHIVE PREVIEW</p>
+      </div>
+      <button id="modal-close-btn" type="button" aria-label="Close dialog" class="inline-flex items-center justify-center w-10 h-10 border border-light-border dark:border-dark-border bg-light-background dark:bg-dark-background text-light-on-background dark:text-dark-on-background hover:bg-light-accent dark:hover:bg-dark-accent hover:text-light-on-accent dark:hover:text-dark-on-accent rounded-none">
+        <span class="material-symbols-outlined text-title-md">close</span>
+      </button>
+    </header>
+    <div class="p-gutter-md md:p-gutter-lg bg-light-surface-alt dark:bg-dark-surface-alt max-h-[75vh] overflow-auto flex justify-center">
+      <img id="modal-doc-img" src alt="Certificate or document preview" class="max-w-full h-auto border border-light-border dark:border-dark-border bg-light-surface">
+    </div>
+    <footer class="p-gutter-md md:p-gutter-lg border-t border-light-border dark:border-dark-border flex items-center justify-end gap-gutter-md">
+      <button id="modal-close-footer" type="button" class="px-gutter-lg py-gutter-sm border border-light-border dark:border-dark-border bg-light-surface dark:bg-dark-surface text-light-on-surface dark:text-dark-on-surface font-label text-label-lg uppercase rounded-none">
+        <span data-design-text-token="label-lg">Close</span>
+      </button>
+      <a id="modal-doc-pdf" href="#" target="_blank" rel="noopener noreferrer" class="px-gutter-lg py-gutter-sm border border-light-accent dark:border-dark-accent bg-light-accent dark:bg-dark-accent text-light-on-accent dark:text-dark-on-accent font-label text-label-lg uppercase rounded-none">
+        <span data-design-text-token="label-lg">Open Original PDF</span>
+      </a>
+    </footer>
+  </dialog>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <dialog id="mobile-nav-drawer" data-component-id="modal-drawer" data-component-type="modal" data-component-variant="drawer" aria-labelledby="modal-drawer-title" class="w-full max-w-xs h-full bg-light-background dark:bg-dark-background text-light-on-background dark:text-dark-on-background border-l-2 border-light-border dark:border-dark-border rounded-none p-gutter-lg ml-auto mr-0">
+    <header class="flex items-center justify-between border-b border-light-border dark:border-dark-border pb-gutter-md mb-gutter-lg">
+      <h2 id="modal-drawer-title" data-design-text-token="title-md" class="font-title text-title-md uppercase text-balance">FULLSTACKHUB</h2>
+      <button id="mobile-menu-close" type="button" aria-label="Close navigation menu" class="w-10 h-10 border border-light-border dark:border-dark-border flex items-center justify-center rounded-none">
+        <span class="material-symbols-outlined text-title-md">close</span>
+      </button>
+    </header>
+    <nav class="flex flex-col gap-gutter-md font-label text-label-lg uppercase">
+      <a href="#about" class="mobile-nav-link py-gutter-xs border-b border-light-border dark:border-dark-border">01 / About</a>
+      <a href="#journey" class="mobile-nav-link py-gutter-xs border-b border-light-border dark:border-dark-border">02 / Journey</a>
+      <a href="#skills" class="mobile-nav-link py-gutter-xs border-b border-light-border dark:border-dark-border">03 / Skills</a>
+      <a href="#work" class="mobile-nav-link py-gutter-xs border-b border-light-border dark:border-dark-border">04 / Work</a>
+      <a href="#research" class="mobile-nav-link py-gutter-xs border-b border-light-border dark:border-dark-border">05 / Research</a>
+      <a href="#certificates" class="mobile-nav-link py-gutter-xs border-b border-light-border dark:border-dark-border">06 / Certificates</a>
+      <a href="#contact" class="mobile-nav-link py-gutter-xs border-b border-light-border dark:border-dark-border">07 / Contact</a>
+    </nav>
+  </dialog>
+
+  <script data-stitch-original-script="150998a9fd6f6da1===../../images/cert_iot.png|||f3fb34dea17b0cdd===../../images/cert_cn.png|||d032d80f9c03dfe9===../../images/cert_tutedude.png|||71ef916d04f80e1c===../../images/cert_binance_tee.png|||b2bc7ec9332f4db5===../../images/cert_binance_onchain.png|||3a1edd5a6544dc2d===../../images/cert_ijrti.png">
+    (function () {
+      const root = document.documentElement;
+      const themeBtn = document.getElementById('theme-toggle');
+      const themeLabel = document.getElementById('theme-label');
+
+      function updateThemeLabel() {
+        if (themeLabel) {
+          themeLabel.textContent = root.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+        }
+      }
+      updateThemeLabel();
+
+      if (themeBtn) {
+        themeBtn.addEventListener('click', function () {
+          root.classList.toggle('dark');
+          updateThemeLabel();
+        });
+      }
+
+      // =========================================================================
+      // FLEXIBLE CERTIFICATE ARCHIVE REGISTRY
+      // To add a new certificate in the future, append an object to CERTIFICATES:
+      // { category: 'systems'|'blockchain'|'research'|..., issuer, date, title, credentialId, image, pdf, verifyUrl }
+      // =========================================================================
+      const CERTIFICATES = [
+        {
+          category: 'systems',
+          categoryLabel: 'Systems & IoT',
+          issuer: 'NPTEL',
+          date: 'JUL–OCT 2026',
+          title: 'Introduction to Internet of Things — 84%',
+          credentialId: 'ROLL: NPTEL26CS161MANUAL0006303',
+          image: 'https://lh3.googleusercontent.com/aida/ALJJyrCi64n1fIgoAZ3MbiPiDqWVA8rvxd9Kz_T54bbp7Py-ksQn6mU2pPeyZEwYQ5xMdldc9b9yspTw4KaHOvLjrLt0G7JBAQen7jo9eHjMV7rwIXL2BeUgfoo-QY8OGK--Rn2JtxJI9HcPTYGS8UzvWIIxMTNoHPdLzn573nbYCLPSGSZVxdgCfWAWZUBxjbXSbPqmyon_VlRJUWnfbLQ9kLrtFexMiXM0mt0CX2fvEr2g2y4',
+          pdf: '../../uploads/iot_certificate-a0b4c9.pdf',
+          verifyUrl: 'https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL26CS161MANUAL0006303'
+        },
+        {
+          category: 'systems',
+          categoryLabel: 'Systems & IoT',
+          issuer: 'NPTEL',
+          date: 'JAN–APR 2025',
+          title: 'Computer Networks & Internet Protocol — 61%',
+          credentialId: 'ROLL: NPTEL25CS15S759700290',
+          image: 'https://lh3.googleusercontent.com/aida/ALJJyrBwE4o-ozlPVcc-yatTKeYOLLfcAALDogmMU-cUBsSzKv0BbAEUFgqhHmGe-ma0Nz6-tnAi7ZgyWCgr3jZOwk5Wk95QTfjSO4pDGF3R1b_w6oM8Y0jLjHtwIfGBY1s7X6KXq4Zsv4smjPP1HqUzetliX6drtTH0gx7qoe5wrd-exF0KdOK-xvGzvmBZWMNqssa_ukYbH5CZ1K8dyqrBFEc-0PUH5eCt8btgy6o3Zz6D',
+          pdf: '../../uploads/computer_network-31bf35.pdf',
+          verifyUrl: 'https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL25CS15S759700290'
+        },
+        {
+          category: 'blockchain',
+          categoryLabel: 'Blockchain',
+          issuer: 'TUTEDUDE',
+          date: '03 OCT 2026',
+          title: 'Tutedude — Blockchain',
+          credentialId: 'CERT ID: TD-ZAW-BC-1740',
+          image: 'https://lh3.googleusercontent.com/aida/ALJJyrACd4WOVp2LMCxQwdhY-4Bi-yt7MfY_0pr2S0v1jD6Fui297RexHElrquxZUVdG_vqmXOpnV15S9rkes9mT2q13Jpj_lnCN1FB5O9c9nRv1tYoU3UXhAApiJNsBhX5QmbJ8Iyr2Rp3X1bqmeFO9MJA_cYUoGMcPmPYYE7OvH2iXDZGDtauSdsuiSuzeSujrcbxG4sw1PgqNQIw2SIRpS2-MPgQl8iUa6L5fjVT3BWvZOCqg-xEXaw',
+          pdf: '../../uploads/blockchain_certificate_tutedude-ed96b5.pdf',
+          verifyUrl: 'https://upskill.tutedude.com/'
+        },
+        {
+          category: 'blockchain',
+          categoryLabel: 'Blockchain',
+          issuer: 'BINANCE × MARLIN',
+          date: 'NOV 2026',
+          title: 'Offchain Computing Using TEE Coprocessors',
+          credentialId: 'BINANCE ACADEMY × MARLIN (QR VERIFIED)',
+          image: 'https://lh3.googleusercontent.com/aida/ALJJyrBQ7FuFBYeRqaWyKda-bIqovGrlDUNi0-bbq3qcBxDnO0U8P5RpoPrz2vYzqLRKEac58_bnJWQcM6UrcAiqWb8UPNSKUy0OPrA0xMrskLBVcbLzURZzDmSrhpE1q2nlS12TzDg2TxDpFxLnZ0nEaoWjCI7IyJ_kn01ejQMW3J5YcTmMcNImlOde2MRk74AzGt1AH9WHtsYYt8yp7Kog76xEdoVARZs46X2dHqGCe3zIPrts9jL7-Ke_-Cc',
+          pdf: '../../uploads/off_chain_blockchain_certificate-fdf704.pdf',
+          verifyUrl: 'https://academy.binance.com/'
+        },
+        {
+          category: 'blockchain',
+          categoryLabel: 'Blockchain',
+          issuer: 'BINANCE ACADEMY',
+          date: 'NOV 2026',
+          title: 'On-Chain Analysis for Beginners',
+          credentialId: 'BINANCE ACADEMY (QR VERIFIED)',
+          image: 'https://lh3.googleusercontent.com/aida/ALJJyrDQk1mRDYtiQJaxvuET1pZjpkWo2z2CNi_KH1Aox-JXvK1H_8NGexGk53_8ZycFZp7Oax1AUiJeP0bX0A8B7G7VFZx5sDvMxWeGHU6paIJy0wnDc5zFqN1NJqPyYGbqKzxGiGQZfd2p5TJpr2gwJ_GYaZA7-iMNha6hajigHOlD5ttMkXsrdKp6Xo2R15qvCy_E-sxiccrz7W5KPgqdYcgQFlKkftEiyrXtxdCpU6ruDXHqjXpSiGIlsImOUdF_',
+          pdf: '../../uploads/on_chain_analysis_beginner-28ba74.pdf',
+          verifyUrl: 'https://academy.binance.com/'
+        },
+        {
+          category: 'research',
+          categoryLabel: 'Research',
+          issuer: 'IJRTI',
+          date: 'SEP 2026',
+          title: 'IJRTI — Research Publication Certificate',
+          credentialId: 'PAPER ID: IJRTI2609363 // REG: 300762',
+          image: 'https://lh3.googleusercontent.com/aida/ALJJyrCdM_qR6Z_jsx3Q7piedCxuUBATHgcViwKPZrk-4P4j8QLAQC0_X5_V2wddd-kHYU42lMCdQwyvubMfPk7xeKb6ftt50aO8wv8wo6l-kRM6QAgOxQrTdK0bOh0zSnw5PTb_zBjzt42HhYpUFJgWuk05A_JWo00B1GS3udll09J7U9bPEFlOGxbYemU3O3S7n5LhUUAjYfnXFUqeMBPrzRyZuja3ouaxjaNc-9Ny8EyvMk8dIg',
+          pdf: '../../uploads/certificate_zaw-23b0c2.pdf',
+          verifyUrl: 'https://www.ijrti.org/'
+        }
+      ];
+
+      const certGrid = document.getElementById('cert-grid');
+      const certTablist = document.getElementById('cert-tablist');
+      const certCountLabel = document.getElementById('cert-count-label');
+      let activeFilter = 'all';
+
+      function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+
+      function renderCertTabs() {
+        if (!certTablist) return;
+        const counts = { all: CERTIFICATES.length };
+        const labels = { all: 'All' };
+        CERTIFICATES.forEach(function (c) {
+          counts[c.category] = (counts[c.category] || 0) + 1;
+          labels[c.category] = c.categoryLabel || c.category;
+        });
+
+        certTablist.innerHTML = Object.keys(counts).map(function (key) {
+          const active = key === activeFilter;
+          const cls = active
+            ? 'cert-filter-btn px-gutter-md py-gutter-sm bg-light-accent dark:bg-dark-accent text-light-on-accent dark:text-dark-on-accent border border-light-accent dark:border-dark-accent rounded-none font-label text-label-lg uppercase transition-colors duration-state-change'
+            : 'cert-filter-btn px-gutter-md py-gutter-sm bg-light-background dark:bg-dark-background text-light-on-background dark:text-dark-on-background border border-light-border dark:border-dark-border rounded-none font-label text-label-lg uppercase transition-colors duration-state-change hover:bg-light-primary dark:hover:bg-dark-primary hover:text-light-on-primary dark:hover:text-dark-on-primary';
+          return '<button role="tab" type="button" data-filter="' + key + '" aria-selected="' + (active ? 'true' : 'false') + '" class="' + cls + '"><span data-design-text-token="label-lg">' + labels[key] + ' (' + pad2(counts[key]) + ')</span></button>';
+        }).join('');
+
+        certTablist.querySelectorAll('.cert-filter-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            activeFilter = btn.getAttribute('data-filter');
+            renderCertTabs();
+            renderCertGrid();
+          });
+        });
+      }
+
+      function renderCertGrid() {
+        if (!certGrid) return;
+        if (certCountLabel) {
+          certCountLabel.textContent = pad2(CERTIFICATES.length) + ' VERIFIED ORIGINAL DOCUMENTS // ZAW MOE HEIN';
+        }
+        const filtered = CERTIFICATES.filter(function (c) {
+          return activeFilter === 'all' || c.category === activeFilter;
+        });
+        certGrid.innerHTML = filtered.map(function (c) {
+          const arcNum = pad2(CERTIFICATES.indexOf(c) + 1);
+          return (
+            '<article data-category="' + c.category + '" data-component-id="card-action" data-component-type="card" data-component-variant="action" class="cert-card bg-light-surface dark:bg-dark-surface flex flex-col justify-between">' +
+              '<header class="p-gutter-md border-b border-light-border dark:border-dark-border flex items-baseline justify-between gap-gutter-sm">' +
+                '<span class="font-label text-label-lg text-light-accent dark:text-dark-accent uppercase tabular-nums">ARC.' + arcNum + '</span>' +
+                '<span class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase tabular-nums">' + c.issuer + ' // ' + c.date + '</span>' +
+              '</header>' +
+              '<div class="p-gutter-md bg-light-surface-alt dark:bg-dark-surface-alt border-b border-light-border dark:border-dark-border">' +
+                '<img src="' + c.image + '" alt="' + c.title + '" class="w-full h-56 object-contain bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border">' +
+              '</div>' +
+              '<div class="p-gutter-md flex-1">' +
+                '<h3 class="font-title text-title-md uppercase mb-gutter-xs text-balance">' + c.title + '</h3>' +
+                '<p class="font-label text-label-sm text-light-secondary dark:text-dark-secondary uppercase">' + c.credentialId + '</p>' +
+              '</div>' +
+              '<footer class="px-gutter-md py-gutter-sm border-t border-light-border dark:border-dark-border flex flex-wrap items-center justify-between gap-gutter-sm">' +
+                '<button type="button" data-open-viewer data-doc-title="' + c.title + '" data-doc-meta="' + c.issuer + ' // ' + c.date + ' // ' + c.credentialId + '" data-doc-img="' + c.image + '" data-doc-pdf="' + c.pdf + '" data-doc-verify="' + (c.verifyUrl || '') + '" class="font-label text-label-sm uppercase text-light-accent dark:text-dark-accent hover:underline">Full-Screen Viewer</button>' +
+                '<div class="flex items-center gap-gutter-md">' +
+                  (c.verifyUrl ? '<a href="' + c.verifyUrl + '" target="_blank" rel="noopener noreferrer" class="font-label text-label-sm uppercase underline">Verify</a>' : '') +
+                  '<a href="' + c.pdf + '" target="_blank" rel="noopener noreferrer" class="font-label text-label-sm uppercase underline">PDF</a>' +
+                '</div>' +
+              '</footer>' +
+            '</article>'
+          );
+        }).join('');
+
+        bindViewerTriggers(certGrid);
+      }
+
+      // Document Viewer Modal
+      const docModal = document.getElementById('doc-viewer-modal');
+      const modalTitle = document.getElementById('modal-doc-title');
+      const modalMeta = document.getElementById('modal-doc-meta');
+      const modalImg = document.getElementById('modal-doc-img');
+      const modalPdf = document.getElementById('modal-doc-pdf');
+      const closeBtns = [document.getElementById('modal-close-btn'), document.getElementById('modal-close-footer')];
+
+      function bindViewerTriggers(scope) {
+        (scope || document).querySelectorAll('[data-open-viewer]').forEach(function (trigger) {
+          trigger.addEventListener('click', function () {
+            if (!docModal) return;
+            modalTitle.textContent = trigger.getAttribute('data-doc-title') || 'Document Preview';
+            modalMeta.textContent = trigger.getAttribute('data-doc-meta') || '';
+            modalImg.src = trigger.getAttribute('data-doc-img') || '';
+            modalPdf.href = trigger.getAttribute('data-doc-pdf') || '#';
+            docModal.showModal();
+          });
+        });
+      }
+
+      bindViewerTriggers(document);
+      renderCertTabs();
+      renderCertGrid();
+
+      closeBtns.forEach(function (btn) {
+        if (btn && docModal) {
+          btn.addEventListener('click', function () { docModal.close(); });
+        }
+      });
+
+      // Mobile Navigation Drawer
+      const drawer = document.getElementById('mobile-nav-drawer');
+      const openDrawer = document.getElementById('mobile-menu-open');
+      const closeDrawer = document.getElementById('mobile-menu-close');
+      if (openDrawer && drawer) {
+        openDrawer.addEventListener('click', function () { drawer.showModal(); });
+      }
+      if (closeDrawer && drawer) {
+        closeDrawer.addEventListener('click', function () { drawer.close(); });
+      }
+      document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+        link.addEventListener('click', function () { if (drawer) drawer.close(); });
+      });
+    })();
+  </script>
+
+
+</body></html>
